@@ -34,7 +34,7 @@ Using k-means allows us to place countries into clusters in which member countri
 
 The underlying analysis for this post was written in R. The code is provided at the end of this page as well as in the accompanying [GitHub repo](https://github.com/OwnKng/world-bank-pca). The visualisations were created with [D3](https://d3js.org/) and [visx](https://airbnb.io/visx/).
 
-# Wealth: How rich are people in this country?
+## Wealth: How rich are people in this country?
 
 One good way of telling countries apart is to look at how much income a typical person within the country has in a given year. Moreover, higher incomes are often associated with many other desirable traits, such as better public health, access to education or better infrastructure.
 
@@ -64,7 +64,7 @@ These patterns are broadly similar if we look again at GDP per capita and the pe
   color='cluster'
 />
 
-# Governance: How well is this country governed?
+## Governance: How well is this country governed?
 
 The quality of government is another good way of separating countries. The [Worldwide Governance Indicators (WGI) project](https://info.worldbank.org/governance/wgi/) at the World Bank provides a single score for several different governance indicators, including adherence to the rule of law, how well designed regulations are and how effective government in each country is.
 
@@ -76,7 +76,7 @@ It's worth noting that good governance isn't necessarily the same thing as polit
 
 <Boxplot data={governance} y='cluster' color='cluster' />
 
-# Demographics: How young are people in this country?
+## Demographics: How young are people in this country?
 
 The population of some countries are younger than in others. The histogram below shows the distribution of people under the age of 40 in each country across the dataset. Each cell represents a country. There are 35 countries in which less than 20% of the population are over the age of 40. All but one of these countries belongs to our <Span color = '#EF6461' >Poor, but young</Span> cluster.
 
@@ -84,7 +84,7 @@ On the other end of the histogram, we see a much higher concentration of countri
 
 <Stacks />
 
-# Size: How 'big' is this country?
+## Size: How 'big' is this country?
 
 In the visualisations we've examined so far we've been able to effectively separate the <Span color = '#98A6D4' >Rich, well governed and free</Span> from the <Span color = '#EF6461' >Poor, but young</Span> clusters. However, the <Span color = '#E4B363' >(mostly) big and developing</Span> and <Span color = '#00C49A' >Small, (mostly) free and developing</Span> clusters have so far looked quite similar. How are these two clusters different?
 
@@ -100,7 +100,7 @@ As we saw earlier, however, this doesn't necessarily make these nations poor. Ch
   color='cluster'
 />
 
-# Liberty: How free is this country?
+## Liberty: How free is this country?
 
 The freedoms enjoyed by people also vary considerably across the different countries. [Freedom House scores countries](https://freedomhouse.org/reports/freedom-world/freedom-world-research-methodology) in terms of both political rights and civil liberties, based on a number of different measures. Political rights scores range between 0 and 40, while civil liberties scores range from 0 to 60.
 
@@ -110,7 +110,7 @@ The [density plots](https://www.data-to-viz.com/graph/density.html) below show t
 
 <Density data={politicalRights} x='Political rights score' color='cluster' />
 
-# Methodology
+## Methodology
 
 For this analysis we have compiled a dataset of 26 numeric indicators
 across 170 countries. The data relates to either 2019 or (if this was
@@ -159,7 +159,7 @@ development_indicators %>%
 
 ![](/thoughts/world-bank-clustering/unnamed-chunk-10-1.png)
 
-## Principal component analysis
+### Principal component analysis
 
 Many of the variables in our data vary together (covary), and the
 variation in one variable is likely to be duplicated in another.
@@ -206,7 +206,7 @@ development_prep <- prep(development_recipe)
 development_prep
 ```
 
-```
+```r
     ## Data Recipe
     ##
     ## Inputs:
@@ -234,7 +234,7 @@ variance in the original data.
 summary(development_prep$steps[[3]]$res)
 ```
 
-```
+```r
     ## Importance of components:
     ##                           PC1    PC2     PC3     PC4     PC5     PC6    PC7     PC8     PC9    PC10    PC11    PC12    PC13
     ## Standard deviation     3.5859 1.7892 1.49817 1.33984 1.18539 1.04611 0.8471 0.74432 0.68828 0.59445 0.51567 0.48925 0.43806
@@ -317,7 +317,7 @@ development_bake %>%
 
 ![](/thoughts/world-bank-clustering/unnamed-chunk-14-1.png)
 
-## Clustering the principal component scores using k-means
+### Clustering the principal component scores using k-means
 
 We'll now cluster the countries in the principal component space using
 k-means clustering. k-means is a simple yet very popular clustering
