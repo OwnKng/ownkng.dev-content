@@ -206,6 +206,7 @@ development_prep <- prep(development_recipe)
 development_prep
 ```
 
+```
     ## Data Recipe
     ##
     ## Inputs:
@@ -221,6 +222,7 @@ development_prep
     ## Log transformation on GDP (current US$), Land area (sq. km), ... [trained]
     ## Centering and scaling for Current health expenditure (% of GDP), ... [trained]
     ## PCA extraction with Current health expenditure (% of GDP), ... [trained]
+```
 
 The table below shows the proportion of variance explained by the
 returned principal components. Our original dataset consisted of 26
@@ -232,6 +234,7 @@ variance in the original data.
 summary(development_prep$steps[[3]]$res)
 ```
 
+```
     ## Importance of components:
     ##                           PC1    PC2     PC3     PC4     PC5     PC6    PC7     PC8     PC9    PC10    PC11    PC12    PC13
     ## Standard deviation     3.5859 1.7892 1.49817 1.33984 1.18539 1.04611 0.8471 0.74432 0.68828 0.59445 0.51567 0.48925 0.43806
@@ -241,6 +244,7 @@ summary(development_prep$steps[[3]]$res)
     ## Standard deviation     0.38440 0.29469 0.28885 0.26168 0.22914 0.20653 0.18740 0.17107 0.16626 0.11676 0.11060 0.0721 0.004898
     ## Proportion of Variance 0.00568 0.00334 0.00321 0.00263 0.00202 0.00164 0.00135 0.00113 0.00106 0.00052 0.00047 0.0002 0.000000
     ## Cumulative Proportion  0.98242 0.98576 0.98897 0.99160 0.99362 0.99526 0.99662 0.99774 0.99880 0.99933 0.99980 1.0000 1.000000
+```
 
 Let's have a look at the most important variables to the top five
 principal components. The graph below shows which of the original
