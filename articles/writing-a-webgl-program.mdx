@@ -17,7 +17,7 @@ import Circle from "./webgl/circle/Circle"
 
 The colorful circle that appears on this page is an example of a custom WebGL shader. This article explains how it was built.
 
-# What is a shader?
+## What is a shader?
 
 A shader is simply a small programme that draw something to a user's screen. These programmes are executed on a device's Graphics Processing Unit (GPU), which are designed to run many operations in parallel. This allows shaders to generate complex visual effects involving millions of calculations very quickly.
 
@@ -31,7 +31,7 @@ Fragment shaders define the colors for each pixel being processed and are called
 
 Three.js's in-built materials - such as [`MeshStandardMaterial`](https://threejs.org/docs/#api/en/materials/MeshStandardMaterial) or [`MeshPhongMaterial`](https://threejs.org/docs/?q=meshp#api/en/materials/MeshPhongMaterial) - are all built using WebGL shaders. Three.js also provides two materials, [`RawShaderMaterial`](https://threejs.org/docs/?q=shader#api/en/materials/RawShaderMaterial) and [`ShaderMaterial`](https://threejs.org/docs/?q=shader#api/en/materials/ShaderMaterial), which allow us to define our own WebGL shader. When using either of these materials, we supply our own vertex and fragment shaders.
 
-# Writing a WebGL shader
+## Writing a WebGL shader
 
 We'll be writing the circular shader that appears on the top of this page. The starter code is available [here](https://codesandbox.io/s/webgl-shader-starter-88193), and the finished version is [here](https://codesandbox.io/s/webgl-shader-zi5nf?file=/src/script.js). I've also implemented this shader in [React Three Fiber](https://github.com/pmndrs/react-three-fiber), a popular Three.js renderer for React. The code for this is available in this [GitHub repo](https://github.com/OwnKng/r3f-webgl-shader).
 
@@ -83,7 +83,7 @@ Increasing this value will narrow the bands of the sine waves, making our mesh m
 float distortion = sin(transPosition.x * 2.0) + cos(transPosition.y * 1.5);
 ```
 
-# Supplying shaders with `uniforms`
+## Supplying shaders with `uniforms`
 
 In GLSL, [`uniforms`](https://thebookofshaders.com/glossary/?search=uniform) are inputs we supply to the shader to use in our programmes. These inputs are the same for each vertex or pixel and can be floating point numbers, vectors, matrices or other [data types](<https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)>).
 
@@ -135,7 +135,7 @@ Now update the value of the `distortion` variable to use our uniform `uTime`.
 
 Our mesh's z positions now animate using the value of `uTime` in the calculations.
 
-# Using `varying` to pass data between our shaders
+## Using `varying` to pass data between our shaders
 
 In our vertex shader, we've calculated a value for the `distortion` variable for each vertex. What if we also wanted to use this value to color our pixels? How can we pass `distortion` to our fragment shader?
 
@@ -163,7 +163,7 @@ void main() {
 
 The tops of our waves are now bright white, and the depths are black. It's not a particularly attractive effect yet, because the value of our `vDistortion` actually falls outside of the acceptable range of 0 to 1. We'll address this shortly.
 
-# Using a noise algorithm
+## Using a noise algorithm
 
 [Noise algorithm](https://thebookofshaders.com/11/) create patterns by introducing some pseudo-random distortion (or noise) to input values. The returned results aren't entirely random: Two similar numbers run through a noise algorithm will still be close to each other when processed, but with a little more variability. This has the effect of producing very natural looking patterns.
 
@@ -204,7 +204,7 @@ distortion = distortion * 0.5 + 0.5;
 
 The z positions of our mesh now undulate nicely using our noise values.
 
-# Coloring our shader
+## Coloring our shader
 
 We can also use the values returned from our noise algorithm to color our fragments. One way to do this would be to turn the values of our `vDistortion` varying into Hue, Saturation and Lightness (HSL) values.
 
@@ -285,7 +285,7 @@ We can also add a constant to set a base color. The code below will contain our 
   vec3 color = hsl2rgb(0.4 + vDistortion * 0.4, 0.5, 0.5);
 ```
 
-# Modifying our shape using alpha
+## Modifying our shape using alpha
 
 Our shader so far has a nice noise effect and a range of colors. However, it's square shape is somewhat uninspiring.
 
@@ -364,13 +364,13 @@ const material = new THREE.ShaderMaterial({
 
 This produces our nice wavy circle.
 
-# Wrap up
+## Wrap up
 
 Writing WebGL shaders is hard. It not only relies on an understanding of mathematical concepts from trigonometry, but because there's no `console.log()` in GLSL, it's difficult to debug your shader when it's not working as expected. The constant values I've used to modify the positions and colors used in the circle shader, for instance, were primarily the result of a lot of trial and error.
 
 Despite this, there's definitely something really enjoyable about using code and mathematical concepts to produce artistic and beautiful visualisations. Shaders are also something with a certain 'wow' factor that, even when used around the margins of a website or application, can create really impactful experiences.
 
-# Learn more about WebGL shaders
+## Learn more about WebGL shaders
 
 In learning about WebGL shaders I've found the following resources extremely helpful.
 
