@@ -13,7 +13,15 @@ import ScatterPlot from "../components/graphs/ScatterPlot"
 
 <h3>Economic development improves life expectancy</h3>
 <span>GDP per capita and life expectancy. Point size shows population</span>
-<div className='w-full h-[550px] mb-[50px] relative'>
+<div 
+style={{
+  position: "relative",
+  width: "100%",
+  height: "550px"
+}}
+
+>
+
   <ScatterPlot />
 </div>
 <span style={{ display: "flex", marginTop: 10, justifyContent: "flex-end" }}>
