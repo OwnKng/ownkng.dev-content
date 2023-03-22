@@ -9,9 +9,13 @@ summary:
   - Here's the second point
 ---
 
+import ScatterPlot from "../components/graphs/ScatterPlot"
+
 <h3>Economic development improves life expectancy</h3>
 <span>GDP per capita and life expectancy. Point size shows population</span>
-<div className='w-full h-[550px] mb-[50px] relative'></div>
+<div className='w-full h-[550px] mb-[50px] relative'>
+  <ScatterPlot />
+</div>
 <span style={{ display: "flex", marginTop: 10, justifyContent: "flex-end" }}>
   Source: World Bank, 2020
 </span>
