@@ -44,7 +44,7 @@ There are a few things to note about this chart before we start writing any code
 
 Each point represents a country. The radius of the point is proportional to the country's population and the color shows which world region it is located in. We have a tooltip, which snaps to the closest country to the cursor or touch position. The chart is also responsive and will rescale when we adjust the size of the browser window.
 
-## Installing the visx packages
+### Installing the visx packages
 
 Let's create a new React application. Run `npx create-react-app visx-scatterplot` to get started.
 
@@ -187,7 +187,7 @@ return (
 )
 ```
 
-**Add axes**
+### Add axes
 
 Our scatter plot component now returns a set of points mapped to our data. However, we can't yet read the values of the points because our visualisation has no axes. We can fix this using the `<Axis />` components that visx provides.
 
@@ -231,7 +231,7 @@ return (
 )
 ```
 
-**Add grid lines**
+### Add grid lines
 
 To make the chart more readable, we'll also want to add some grid lines along the x axis. As before, we'll import the desired component from the visx library and modify our return statement.
 
@@ -258,7 +258,7 @@ return (
 )
 ```
 
-**Add the legend**
+### Add the legend\*\*
 
 We're still missing the legend to match the color of our points to regions. To do this, we'll import the `<LegendOrdinal>` components from the `@visx/legend` library.
 
@@ -530,7 +530,7 @@ We'll also amend our `<Cicle />` components by applying a highlight effect to th
 />
 ```
 
-# Wrap up
+## Wrap up
 
 The full code for our visualisation is available [here](https://codesandbox.io/s/objective-snow-txbsr?file=/src/App.js).
 
