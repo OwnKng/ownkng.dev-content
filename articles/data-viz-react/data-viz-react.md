@@ -9,7 +9,7 @@ summary:
   - Here's the second point
 ---
 
-<iframe src='/components/graphs/scatterplot'></iframe>
+<iframe src='https://components.ownkng.xyz/scatterplot'></iframe>
 
 Powerful visualisation libraries in JavaScript are surprisingly few in number. While popular charting libraries like [Chart.js](https://www.chartjs.org/) and [Plotly](https://plotly.com/graphing-libraries/) offer good functionality, they're relatively limited in the types of visualisations they support and the extent to which they can be customised.
 
