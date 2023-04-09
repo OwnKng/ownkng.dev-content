@@ -4,12 +4,9 @@ title: 3D mapping with rayshader and three.js
 published: 2021-01-07
 description: Recreating China's Jade Snow Mountain with R and React
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679607451/yulongxueshan_m6hkyx.png
-summary:
-  - Here's the first point
-  - Here's the second point
 ---
 
-<iframe src='/components/webgl/yuelongxueshan'></iframe>
+<iframe src='https://components.ownkng.xyz/yulongxueshan'></iframe>
 
 [Rayshader](https://www.rayshader.com/) is an open source R package for turning elevation data into 2D and 3D visualisations. It produces beautiful topographical maps with accurate lighting effects using a combination of raytracing, spherical texture mapping, overlays and ambient occlusion.
 
