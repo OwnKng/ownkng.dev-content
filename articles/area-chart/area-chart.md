@@ -9,7 +9,7 @@ summary:
   - Here's the second point
 ---
 
-<iframe src='/components/graphs/areachart'></iframe>
+<iframe src='https://components.ownkng.xyz/areachart'></iframe>
 
 [Visx](https://airbnb.io/visx/) is a collection of visualisation packages for React developed by Airbnb. The power of visx is that it combines low-level primitives for constructing data visualisation out of basic geometries and scales, while also providing high-level components and functions to handle the more finicky elements of creating graphs for the web - such as tooltips, legends and resizing. This makes visx a highly expressive library for data visualisation, while also conforming with the declarative syntax of React.
 
