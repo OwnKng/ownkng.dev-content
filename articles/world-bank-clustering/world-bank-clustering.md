@@ -9,7 +9,7 @@ summary:
   - Here's the second point
 ---
 
-<iframe src='/components/worldbank/map'></iframe>
+<iframe src='https://components.ownkng.xyz/worldbank/map'></iframe>
 
 How are the countries of the world different from each other? Often we talk about countries within a particular region or continent, but these groupings are somewhat arbitrary and contested (is Russia a European country or a Eurasian one?). Moreover, countries such as South Korea and Australia have higher incomes and levels of development than their immediate neighbours - making them much more similar in this regard to the United States or the countries of Western Europe.
 
@@ -49,7 +49,7 @@ The boxplot below shows the scores of each country cluster for three different g
 
 It's worth noting that good governance isn't necessarily the same thing as political freedom. Countries can have very effective governments and still be illiberal, and vice versa.
 
-<iframe src='/components/worldbank/boxplot'></iframe>
+<iframe src='https://components.ownkng.xyz/worldbank/boxplot'></iframe>
 
 ## Demographics: How young are people in this country?
 
@@ -57,7 +57,7 @@ The population of some countries are younger than in others. The histogram below
 
 On the other end of the histogram, we see a much higher concentration of countries in the <span color = '#98A6D4' >Rich, well governed and free</span> cluster. In both Italy and Japan, for instance, more than 60% of the population are over the age of 40.
 
-<iframe src='/components/worldbank/stacks'></iframe>
+<iframe src='https://components.ownkng.xyz/worldbank/stacks'></iframe>
 
 ## Size: How 'big' is this country?
 
