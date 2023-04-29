@@ -4,9 +4,8 @@ title: Animating data visualisations in React
 published: 2021-01-06
 description: Animated visualisations with visx and Framer Motion
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679514468/area-chart_qir57y.png
-summary:
-  - Here's the first point
-  - Here's the second point
+tags:
+  - Data viz
 ---
 
 <iframe src='https://components.ownkng.xyz/areachart'></iframe>

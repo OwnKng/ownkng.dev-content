@@ -4,9 +4,8 @@ title: Data visualisation in React
 published: 2021-01-04
 description: Getting started with visx, a data visualisation library from Airbnb
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679512337/DataViz_u4jtqv.png
-summary:
-  - Here's the first point
-  - Here's the second point
+tags:
+  - Data viz
 ---
 
 <iframe src='https://components.ownkng.xyz/scatterplot'></iframe>

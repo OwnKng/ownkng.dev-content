@@ -4,9 +4,8 @@ title: Network analysis in R
 published: 2019-01-12
 description: Exploring internal migration in the UK using ggraph
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679515506/ggraph_ww4kye.png
-summary:
-  - Here's the first point
-  - Here's the second point
+tags:
+  - R
 ---
 
 This analysis looks at trends in internal migration in the UK. The data

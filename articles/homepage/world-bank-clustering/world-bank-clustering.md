@@ -4,9 +4,9 @@ title: Clustering countries with PCA and k-means
 published: 2022-04-02
 description: How to group countries using R and tidymodels
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949072/worldBank_sxnn5o.png
-summary:
-  - Here's the first point
-  - Here's the second point
+tags:
+  - R
+  - Machine learning
 ---
 
 <iframe src='https://components.ownkng.xyz/worldbank/map'></iframe>

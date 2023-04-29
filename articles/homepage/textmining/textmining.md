@@ -4,9 +4,9 @@ title: Supervised machine learning for text analysis
 published: 2021-01-17
 description: Classifying objects at the London Science Museum using R and tidymodels
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1678476347/textmining_digf9d.png
-summary:
-  - Here's the first point
-  - Here's the second point
+tags:
+  - Machine learning
+  - R
 ---
 
 The [Science Museum](https://www.sciencemuseum.org.uk/home) in London holds more than 325,000 objects in its exhibition
