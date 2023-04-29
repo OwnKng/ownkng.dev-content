@@ -6,6 +6,7 @@ description: Converting images to scribbled drawings using WebGL
 tags:
   - WebGL
   - Web dev
+  - Featured
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949073/webgl-line_oiwxox.png
 ---
 

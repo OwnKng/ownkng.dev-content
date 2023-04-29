@@ -5,6 +5,7 @@ published: 2021-01-07
 description: Recreating China's Jade Snow Mountain with R and React
 tags:
   - Geospatial
+  - Featured
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679607451/yulongxueshan_m6hkyx.png
 ---
 

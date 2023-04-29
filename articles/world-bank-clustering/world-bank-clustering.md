@@ -7,6 +7,7 @@ img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949072/worldBank_sxn
 tags:
   - R
   - Machine learning
+  - Featured
 ---
 
 <iframe src='https://components.ownkng.xyz/worldbank/map'></iframe>

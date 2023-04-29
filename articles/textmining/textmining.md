@@ -7,6 +7,7 @@ img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1678476347/textmining_di
 tags:
   - Machine learning
   - R
+  - Featured
 ---
 
 The [Science Museum](https://www.sciencemuseum.org.uk/home) in London holds more than 325,000 objects in its exhibition
