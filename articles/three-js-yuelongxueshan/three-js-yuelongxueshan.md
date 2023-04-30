@@ -3,6 +3,7 @@ url: three-js-yuelongxueshan
 title: 3D mapping with rayshader and three.js
 published: 2021-01-07
 description: Recreating China's Jade Snow Mountain with R and React
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/three-js-yuelongxueshan/three-js-yuelongxueshan.md
 tags:
   - Geospatial
   - Featured

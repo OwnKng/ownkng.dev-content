@@ -3,6 +3,7 @@ url: facet-line-chart
 title: Faceting charts with visx and CSS grid
 published: 2021-01-04
 description: How to create faceted line charts
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/facet-line-chart/facet-line-chart.md
 tags:
   - Data viz
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679514691/lineChart_bhxy5f.png

@@ -3,6 +3,7 @@ url: webgl-line
 title: Scribbled lines in WebGL
 published: 2022-04-02
 description: Converting images to scribbled drawings using WebGL
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/webgl-line/webgl-line.md
 tags:
   - WebGL
   - Web dev

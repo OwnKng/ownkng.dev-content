@@ -3,6 +3,7 @@ url: graphix
 title: Creating a graph builder in Next.js
 published: 2021-03-29
 description: How I built GRAPHIX, a web app to create and share interactive data visualisations
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/graphix/graphix.md
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949040/graphix_kbhkzj.png
 tags:
   - Web dev

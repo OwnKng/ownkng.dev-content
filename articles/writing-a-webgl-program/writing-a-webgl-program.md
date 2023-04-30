@@ -4,6 +4,7 @@ title: Writing a WebGl Shader
 published: 2021-05-14
 description: Getting started with WebGL Shaders using three.js and GLSL
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949072/webgl_phuqyb.png
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/writing-a-webgl-program/writing-a-webgl-program.md
 tags:
   - WebGL
   - Web dev

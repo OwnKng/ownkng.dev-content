@@ -4,6 +4,7 @@ title: Supervised machine learning for text analysis
 published: 2021-01-17
 description: Classifying objects at the London Science Museum using R and tidymodels
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1678476347/textmining_digf9d.png
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/text-mining/text-mining.md
 tags:
   - Machine learning
   - R

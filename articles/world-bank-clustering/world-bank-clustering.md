@@ -3,6 +3,7 @@ url: world-bank-clustering
 title: Clustering countries with PCA and k-means
 published: 2022-04-02
 description: How to group countries using R and tidymodels
+editLink: https://github.com/OwnKng/ownkng.dev-content/blob/main/articles/world-bank-clustering/world-bank-clustering.md
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949072/worldBank_sxnn5o.png
 tags:
   - R
