@@ -19,7 +19,7 @@ While this isn't generally regarded as a good method of writing or drawing, it c
 
 This post describes how to create these sorts of effects using [React-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction), a React renderer for [three.js](https://threejs.org/). The accompanying code is available in its entirety on [GitHub](https://github.com/OwnKng/scribbled-sketch).
 
-# The approach
+## The approach
 
 While the code on this page is relatively involved in places, the underlying logic is very simple. The sketch is created from the following steps:
 
@@ -32,7 +32,7 @@ While the code on this page is relatively involved in places, the underlying log
 4. **Applying a shader**.
    We enhance the 3D effect of these tubes by coloring them according to their z-position - making those closer to the front appear brighter than those at the back. We do this through writing our own [WebGl shader](https://developer.mozilla.org/en-US/docs/Web/API/WebGLShader).
 
-# Generating points from an image
+## Generating points from an image
 
 While the hands above do have some three dimensional depth, the basis for the lines is actually a two dimensional image. We can infer depth from the intensity of the image's color and lighting.
 
@@ -100,7 +100,7 @@ const positions = useMemo(() => {
 
 I've wrapped this code in a [useMemo()](https://reactjs.org/docs/hooks-reference.html#usememo) hook because the operation is computationally expensive and we don't want it re-running unless the underlying dependencies change.
 
-# Create lines from randomly sampled points
+## Create lines from randomly sampled points
 
 Once we have an array of points we can randomly sample from this array to generate a starting point for each of our lines. The logic for this is as follows:
 
@@ -148,7 +148,7 @@ const lines = useMemo(() => {
 
 We now have an array of vertices of each line. We can use these vertices to draw our lines.
 
-# Create the curve
+## Create the curve
 
 With our array of line vertices, we can map through each element and return a line for each one. I've extracted this into a component which takes the vertices of each line as a prop, and then generates a three dimensional curve using the [CatmullRomCurve3()](https://threejs.org/docs/#api/en/extras/curves/CatmullRomCurve3) function from three.js.
 
@@ -167,7 +167,7 @@ const Line = ({ vertices }: any) => {
 }
 ```
 
-# Write the shader
+## Write the shader
 
 We could use an inbuilt three.js material to color our lines, but to color the lines according to their z position (and therefore generate a better 3D effect) we'll need to write our own WebGL shader. I've used [shaderMaterial](https://github.com/pmndrs/drei#shadermaterial) from [@react-three/drei](https://github.com/pmndrs/drei) to extend three.js with my own material like so:
 
@@ -224,7 +224,7 @@ void main() {
 
 Applying these shaders to our lines gives them a smooth depth effect, making the sketch appear three dimensional.
 
-# Wrap up and further reading
+## Wrap up and further reading
 
 The version of the sketch on this page has been enhanced a little using some additional uniforms in the fragment shader to control the animations and additional properties in the React component - though adding both of these is fairly trivial. The complete code is available in [this repo](https://github.com/OwnKng/scribbled-sketch).
 

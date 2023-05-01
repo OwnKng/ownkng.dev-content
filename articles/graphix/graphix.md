@@ -45,7 +45,7 @@ Enter [GRAPHIX](https://graphix-viz.vercel.app/discover), a prototype React app 
   />
 </a>
 
-# Graphing with GRAPHIX
+## Graphing with GRAPHIX
 
 [GRAPHIX](https://graphix-viz.vercel.app/discover) is a graph building app that allows users to import csv data, select a geometry (bar, point or line), and then map the variables in their data to aesthetic features - such as the x-axis, y-axis, color and labels.
 
@@ -77,7 +77,7 @@ Each graph that's created using GRAPHIX generates its own url, which when access
 
 GRAPHIX's responsive design scales across mobile, tablets and desktop devices - regardless of whether you're viewing or creating a graph - and the visualisations are designed with pre-configured tooltips, legends and animated axes.
 
-# The technical stack
+## The technical stack
 
 GRAPHIX was originally developed using a Node.js backend and a React frontend developed from a standard `npx create-react-app` boilerplate. This [original version of the app](https://graphix-viz.netlify.app/) used a GraphQL API built using [Apollo GraphQL](https://www.apollographql.com/) and hosted on [Heroku](https://www.heroku.com/). The frontend was deployed to [Netlify](https://www.netlify.com/).
 
@@ -202,7 +202,7 @@ If hasNextPage is equal to `true`, the Discover component also renders a button 
 
 A very similar pattern is replicated on the other routes in the app, though the `/create` and `/user` routes are protected and check for authorisation before fetching any data: If a user is not signed in, the `getServerSideProps()` function will push them to `/signin`, preventing the protected routes from loading any components.
 
-# Representing Graphs in MongoDB
+## Representing Graphs in MongoDB
 
 One of the reasons that GRAPHIX only supports simple graphs is that more complicated visualisations would require a bewildering list of fields for different visual aesthetic features, scales or design choices. As GRAPHIX provides a graphical user interface, each one of these fields would need to be represented by some form of user input - potentially compromising the appeal of a tool which is designed to make it quick and easy to design a good-looking data visualisations.
 
@@ -303,7 +303,7 @@ export const Graphics =
 
 The styles field is only partly developed, and could in time be augmented with nested documents for storing information on the text orientation, color or positioning of the x axis and other features like the y axis, legend or plot area.
 
-# Global State with the Context API and React Hooks
+## Global State with the Context API and React Hooks
 
 One of the core principles of developing a React application is breaking down features of the UI into modular components that can manage their own state and exchange data with other components. Where you have a lot of user inputs however, this can become difficult to manage without excessive [prop-drilling](https://kentcdodds.com/blog/prop-drilling).
 
@@ -424,7 +424,7 @@ const ShareControls = () => {
 
 ```
 
-# What's next for GRAPHIX?
+### What's next for GRAPHIX?
 
 While developing GRAPHIX I was forced to accept a number of trade-offs in how its visualisation system worked: certain data types are only supported by particular geometries; the geometries themselves are mutually exclusive; tooltips behave and display data in a prescriptive way. For the most part, these trade-offs are necessary because they enable the app to provide a simple interface to building graphs quickly. While it's only a prototype, if I were to continue to develop it along its current lines it would inevitably evolve into a highly opinionated tool - not only making assumptions about what types of data are relevant to particular charts, but enforcing strict ideas about how graphs should be constructed and interacted with.
 

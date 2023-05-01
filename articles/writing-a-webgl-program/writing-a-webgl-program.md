@@ -370,7 +370,7 @@ Writing WebGL shaders is hard. It not only relies on an understanding of mathema
 
 Despite this, there's definitely something really enjoyable about using code and mathematical concepts to produce artistic and beautiful visualisations. Shaders are also something with a certain 'wow' factor that, even when used around the margins of a website or application, can create really impactful experiences.
 
-## Learn more about WebGL shaders
+### Learn more about WebGL shaders
 
 In learning about WebGL shaders I've found the following resources extremely helpful.
 

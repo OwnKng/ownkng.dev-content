@@ -81,7 +81,7 @@ objects %>%
     ## [1] "Model of  Apollo Command Service Module (CSM) and Lunar Excursion Module (LEM) in trans lunar configuration, scale 1:48."
 ```
 
-# Text mining with tidytext
+## Text mining with tidytext
 
 [`Tidytext`](https://cran.r-project.org/web/packages/tidytext/readme/README.html)
 is a superb package for manipulating and analysing text data in R,
@@ -388,7 +388,7 @@ word_cors %>%
 
 ![](/thoughts/textmining/unnamed-chunk-14-1.png)
 
-# Machine learning with tidymodels
+## Machine learning with tidymodels
 
 So far we've explored the descriptions of the computing and space
 objects, getting a feel for the terms they use and the substance of the

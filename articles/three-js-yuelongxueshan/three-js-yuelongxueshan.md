@@ -53,7 +53,7 @@ As this code shows, rayshader also provides a number of functions to enhance our
 
 This 3D visualisation is much better representation of the underlying elevation data.
 
-# Recreating China's Jade Dragon Snow Mountain with rayshader
+## Recreating China's Jade Dragon Snow Mountain with rayshader
 
 The [Jade Dragon Snow Mountain](https://en.wikipedia.org/wiki/Jade_Dragon_Snow_Mountain), 玉龙雪山, is a small mountain range in the north of Yunnan province in south-west China. It's highest peak is around 5,600 metres above sea level.
 
@@ -90,7 +90,7 @@ plot_3d(hillshade = rgb_contrast,
 
 When we run the `plot_3d()` function locally, rayshader outputs to an [rgl device](https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html) that allows us to pan around our 3D visualisation. This got me thinking - how could I embed this interactive map into a web application?
 
-# Three.js and react-three-fiber
+## Three.js and react-three-fiber
 
 [Three.js](https://threejs.org/) is the most widely used JavaScript library for displaying 3D graphics in a web browser. In three.js, three dimensional visualisations are constructed by arranging geometries, lights and cameras into a scene.
 
@@ -222,7 +222,7 @@ When `overlay` is `false`, we instead provide an alternative sets of props to `<
 
 We're also using react-three-fiber's `useFrame()` hook to animate our model. This hook allows us to apply calculations to our model on every frame calculation, which in three.js happens 60 times every second. Here, we use `useFrame()` to apply a very small increment to the y axis rotation of our model with every frame calculation.
 
-# Comparing our three.js and Rayshader visualisations
+## Comparing our three.js and Rayshader visualisations
 
 Our three.js visualisation lacks the sophisticated lighting effects that rayshader provides, and so our three.js model certainly looks less realistic than its rayshader counterpart.
 
