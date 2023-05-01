@@ -11,7 +11,7 @@ tags:
   - Featured
 ---
 
-<iframe src='https://components.ownkng.xyz/worldbank/map'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/map'></iframe>
 
 How are the countries of the world different from each other? Often we talk about countries within a particular region or continent, but these groupings are somewhat arbitrary and contested (is Russia a European country or a Eurasian one?). Moreover, countries such as South Korea and Australia have higher incomes and levels of development than their immediate neighbours - making them much more similar in this regard to the United States or the countries of Western Europe.
 
@@ -33,13 +33,13 @@ The graph below shows GDP per capita and life expectancy across the countries in
 
 Second, we can see the concentration of the <span color = '#EF6461' >Poor, but young</span> countries towards the bottom left of the chart. The richest countries in this group have average incomes of just $7-8k, and most of the countries in this cluster have incomes of less than $2k. The median life expectancy in this cluster is only around 65 years.
 
-<iframe src='/components/worldbank/incomelifeexp'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/income'></iframe>
 
 Between these two clusters are our two other groups - <span color = '#E4B363' >(mostly) big and developing</span> and <span color = '#00C49A' >Small, (mostly) free and developing</span>. These clusters have similar levels of GDP per capita and life expectancy, and so looking at income is perhaps not the best way to tell them apart.
 
 These patterns are broadly similar if we look again at GDP per capita and the percentage of the population in each country using the Internet. However, we can perhaps discern that Internet usage is generally higher in the <span color = '#E4B363' >(mostly) big and developing</span> cluster than the <span color = '#00C49A' >Small, (mostly) free and developing</span> cluster.
 
-<iframe src='/components/worldbank/internet'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/internet'></iframe>
 
 ## Governance: How well is this country governed?
 
@@ -51,7 +51,7 @@ The boxplot below shows the scores of each country cluster for three different g
 
 It's worth noting that good governance isn't necessarily the same thing as political freedom. Countries can have very effective governments and still be illiberal, and vice versa.
 
-<iframe src='https://components.ownkng.xyz/worldbank/boxplot'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/boxplot'></iframe>
 
 ## Demographics: How young are people in this country?
 
@@ -59,7 +59,7 @@ The population of some countries are younger than in others. The histogram below
 
 On the other end of the histogram, we see a much higher concentration of countries in the <span color = '#98A6D4' >Rich, well governed and free</span> cluster. In both Italy and Japan, for instance, more than 60% of the population are over the age of 40.
 
-<iframe src='https://components.ownkng.xyz/worldbank/stacks'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/stacks'></iframe>
 
 ## Size: How 'big' is this country?
 
@@ -69,7 +69,7 @@ As their names suggest, one key difference is scale. The scatter plot below show
 
 As we saw earlier, however, this doesn't necessarily make these nations poor. China's economic output in 2019 was worth more than $14 trillion - second only to the United States. But when taking the country's vast population into account this works out to about to about $10,000 per person - about the same as Mauritius, the Republic of the Maldives, St. Lucia and Grenada.
 
-<iframe src='/components/worldbank/population'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/population'></iframe>
 
 ## Liberty: How free is this country?
 
@@ -77,9 +77,9 @@ The freedoms enjoyed by people also vary considerably across the different count
 
 The [density plots](https://www.data-to-viz.com/graph/density.html) below show the range of civil liberties and political rights scores across the clusters. We can see that both the <span color = '#98A6D4' >Rich, well governed and free</span> and <span color = '#00C49A' >Small, (mostly) free and developing</span> clusters score well on both of these metrics. There is a wider range of scores in the <span color = '#E4B363' >(mostly) big and developing</span> cluster, and the <span color = '#EF6461' >Poor, but young</span> generally skew towards the lower end of the scales.
 
-<iframe src='/components/worldbank/civil'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/civil'></iframe>
 
-<iframe src='/components/worldbank/political'></iframe>
+<iframe src='https://components.ownkng.dev/worldbank/political'></iframe>
 
 ## Methodology
 

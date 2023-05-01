@@ -10,7 +10,7 @@ tags:
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1679607451/yulongxueshan_m6hkyx.png
 ---
 
-<iframe src='https://components.ownkng.xyz/yulongxueshan'></iframe>
+<iframe src='https://components.ownkng.dev/yulongxueshan'></iframe>
 
 [Rayshader](https://www.rayshader.com/) is an open source R package for turning elevation data into 2D and 3D visualisations. It produces beautiful topographical maps with accurate lighting effects using a combination of raytracing, spherical texture mapping, overlays and ambient occlusion.
 
