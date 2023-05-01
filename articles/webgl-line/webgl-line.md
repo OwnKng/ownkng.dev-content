@@ -11,7 +11,7 @@ tags:
 img: https://res.cloudinary.com/dqrv3tasx/image/upload/v1677949073/webgl-line_oiwxox.png
 ---
 
-<iframe src='https://components.ownkng.xyz/scribbled'></iframe>
+<iframe src='https://components.ownkng.dev/scribbled'></iframe>
 
 My hand writing could charitably be described as scribbled - and uncharitably as messy or illegible. I'm so used to writing on a laptop or phone that when I actually do use my hands to write something down, I tend to only attempt the general shape of the words and not be overly concerned with how letters are intended to join together or the exact order they're usually in. The same rules apply when I attempt to draw something.
 
