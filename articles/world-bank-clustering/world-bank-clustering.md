@@ -17,7 +17,7 @@ How are the countries of the world different from each other? Often we talk abou
 
 This analysis groups countries into one of four clusters based on around 30 indicators sourced from the [World Bank](https://data.worldbank.org/) and [Freedom House](https://freedomhouse.org/). These indicators mainly relate to levels of economic development, demography, infrastructure, governance and political freedoms.[^1]
 
-### Clustering countries using Principal Component Analysis and K-Means
+## Clustering countries using Principal Component Analysis and K-Means
 
 Many of the indicators we explore are correlated with each other. For this reason, we first use a statistical technique called [Principal Component Analysis (PCA)](https://en.wikipedia.org/wiki/Principal_component_analysis) to reduce the dimensionality of the data and identify those variables which are most important in explaining variation between countries. We then cluster the principal component projections of the data using the [k-means algorithm](https://en.wikipedia.org/wiki/k-means).
 
@@ -78,6 +78,9 @@ The freedoms enjoyed by people also vary considerably across the different count
 The [density plots](https://www.data-to-viz.com/graph/density.html) below show the range of civil liberties and political rights scores across the clusters. We can see that both the <span color = '#98A6D4' >Rich, well governed and free</span> and <span color = '#00C49A' >Small, (mostly) free and developing</span> clusters score well on both of these metrics. There is a wider range of scores in the <span color = '#E4B363' >(mostly) big and developing</span> cluster, and the <span color = '#EF6461' >Poor, but young</span> generally skew towards the lower end of the scales.
 
 <iframe src='https://components.ownkng.dev/worldbank/civil'></iframe>
+
+<br />
+<br />
 
 <iframe src='https://components.ownkng.dev/worldbank/political'></iframe>
 
