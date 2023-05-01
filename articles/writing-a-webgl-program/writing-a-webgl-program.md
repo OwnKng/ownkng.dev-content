@@ -11,7 +11,7 @@ tags:
   - Featured
 ---
 
-<iframe src='https://components.ownkng.xyz/circle'></iframe>
+<iframe src='https://components.ownkng.dev/circle'></iframe>
 
 [Three.js](https://threejs.org/), the most popular JavaScript library for creating three dimensional scenes and visualisations in a web browser, is an incredibly powerful tool. Some of the most eye-catching uses of three.js, however, rely on custom shaders. These shaders use [WebGL](https://www.khronos.org/webgl/), the low-level JavaScript API that three.js is built on, to manipulate the points and colors of three.js meshes and generate effects and patterns.
 
