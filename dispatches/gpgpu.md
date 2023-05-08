@@ -1,6 +1,6 @@
 ---
 title: GPGPU for particle effects
-published: 2023-04-29
+published: 2023-05-08
 description: Using GPGPU in threejs for performant particle effects and physics
 img: https://res.cloudinary.com/dqrv3tasx/video/upload/v1683573055/particlesone_rmpd5w.jpg
 video: https://res.cloudinary.com/dqrv3tasx/video/upload/v1683573055/particlesone_rmpd5w.mp4
